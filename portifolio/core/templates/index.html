@@ -1,4 +1,5 @@
- <!DOCTYPE html>
+{% load static %}
+<!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -8,10 +9,10 @@
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
         
         <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="{% static 'assets/css/swiper-bundle.min.css' %}">
         
         <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="assets/css/styles.css"> 
+        <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}"> 
 
         <title>bernard hamie</title>
     </head>
@@ -140,7 +141,7 @@
                                     <path d="M460.5,276.5Q465,313,441.5,341Q418,369,396,396.5Q374,424,341,437Q308,450,274,455.5Q240,461,203,464Q166,467,139.5,441Q113,415,84,395Q55,375,37,343.5Q19,312,17,276Q15,240,20.5,205Q26,
                                     170,42.5,139.5Q59,109,81,80Q103,51,137.5,41.5Q172,32,206,24Q240,16,276.5,15.5Q313,15,341,38.5Q369,62,397,84Q425,106,436,139.5Q447,173,451.5,206.5Q456,240,460.5,276.5Z"/>
                                     
-                                    <image class="home__blob-img" x="0" y="20" href="./cropped_image.png"/>
+                                    <image class="home__blob-img" x="0" y="20" href="{% static 'cropped_image.png' %}"/>
                                 </g> 
                             </svg>
                               
@@ -175,7 +176,7 @@
     <span class="section__subtitle">Here is a little something about Bernard</span>
 
     <div class="about__container container grid">
-        <img src="assets/img/j.jpg" alt="" class="about__img">
+        <img src="{% static 'assets/img/j.jpg' %}" alt="" class="about__img">
 
         <div class="about__data">
             <p class="about__description">
@@ -933,9 +934,9 @@
         </a>
 
         <!--==================== SWIPER JS ====================-->
-        <script src="assets/js/swiper-bundle.min.js"></script>
+        <script src="{% static 'assets/js/swiper-bundle.min.js' %}"></script>
 
         <!--==================== MAIN JS ====================-->
-        <script src="assets/js/main.js"></script>
+        <script src="{% static 'assets/js/main.js' %}"></script>
     </body>
 </html>
